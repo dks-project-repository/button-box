@@ -11,7 +11,11 @@ Joystick_ Joystick[JOYSTICK_COUNT] = {
 CustomInputs::Encoder encoder1 = CustomInputs::Encoder(0, 1);
 CustomInputs::Encoder encoder2 = CustomInputs::Encoder(3, 4);
 
-void setup() { Serial.begin(115200); }
+void setup() { 
+  Serial.begin(115200); 
+  Joystick[0]
+  
+  }
 
 void loop() {
   unsigned long now = millis();
