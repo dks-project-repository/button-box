@@ -7,10 +7,10 @@
 
 # Common settings
 BasedOnStyle: Google
-TabWidth: 4
-IndentWidth: 4
+TabWidth: 2
+IndentWidth: 2
 UseTab: Always
-ColumnLimit: 100
+ColumnLimit: 200
 
 # Other languages JavaScript, Proto
 
@@ -26,4 +26,3 @@ Language: Cpp
 
 DisableFormat: false
 Standard: Cpp11
-
