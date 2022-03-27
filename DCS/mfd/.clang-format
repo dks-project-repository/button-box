@@ -10,7 +10,7 @@ BasedOnStyle: Google
 TabWidth: 2
 IndentWidth: 2
 UseTab: Always
-ColumnLimit: 200
+ColumnLimit: 0
 
 # Other languages JavaScript, Proto
 
