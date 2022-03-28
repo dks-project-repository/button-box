@@ -98,7 +98,7 @@ class Button : public InputDebounce {
 		released_ = released;
 	}
 	Button(uint8_t pin, void (*pressed)(uint8_t button), void (*released)(uint8_t button), uint8_t button)
-			: InputDebounce(pin, 6, PIM_INT_PULL_UP_RES, 0) {
+			: InputDebounce(pin, 10, PIM_INT_PULL_UP_RES, 0) {
 		init(pin, pressed, released, button);
 	}
 	Button(const Button&);
