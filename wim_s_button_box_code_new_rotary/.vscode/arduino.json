@@ -1,0 +1,5 @@
+{
+    "port": "COM14",
+    "board": "arduino:sam:arduino_due_x_dbg",
+    "sketch": "wim_s_button_box_code_new_rotary.ino"
+}

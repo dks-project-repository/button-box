@@ -1,5 +1,5 @@
 {
-    "port": "COM8",
+    "port": "COM4",
     "board": "arduino:sam:arduino_due_x_dbg",
     "sketch": "test_max_buttons\\test_max_buttons.ino"
 }
