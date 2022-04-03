@@ -80,10 +80,12 @@ class RotaryEncoder {
 
 class Button : public InputDebounce {
  private:
+	uint8_t pin_;
 	uint8_t button_;
 	void (*pressed_)(uint8_t button);
 	void (*released_)(uint8_t button);
 	void init(uint8_t pin, void (*pressed)(uint8_t button), void (*released)(uint8_t button), uint8_t button) {
+		pin_ = pin;
 		button_ = button;
 		pressed_ = pressed;
 		released_ = released;
@@ -97,8 +99,10 @@ class Button : public InputDebounce {
 		pressed_ = pressed;
 		released_ = released;
 	}
-	Button(uint8_t pin, void (*pressed)(uint8_t button), void (*released)(uint8_t button), uint8_t button)
-			: InputDebounce(pin, 10, PIM_INT_PULL_UP_RES, 0) {
+	void begin() {
+		setup(pin_, 10, PIM_INT_PULL_UP_RES, 0);
+	}
+	Button(uint8_t pin, void (*pressed)(uint8_t button), void (*released)(uint8_t button), uint8_t button) {
 		init(pin, pressed, released, button);
 	}
 	Button(const Button&);

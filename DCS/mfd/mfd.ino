@@ -124,6 +124,10 @@ CustomInputs::RotaryEncoder rotaries[NUM_ROTARIES] = {
 
 void setup() {
 	// Serial.begin(250000);
+	for (int btn = 0; btn < NUM_BUTTONS; btn++) {
+		buttons[btn].begin();
+	}
+
 	for (int j = 0; j < JOYSTICK_COUNT; j++) {
 		joy[j].begin();
 	}
