@@ -14,10 +14,10 @@ enum Mode {
 
 #define JOYSTICK_COUNT 4
 Joystick_ joy[JOYSTICK_COUNT] = {
-		Joystick_(JOYSTICK_BASE_ADDRESS + 0x00, JOYSTICK_TYPE_JOYSTICK, 128, 0),	// BASE JOYSTICK (doesn't change with mode)
-		Joystick_(JOYSTICK_BASE_ADDRESS + 0x01, JOYSTICK_TYPE_JOYSTICK, 128, 0),	// RIGHT MFD
-		Joystick_(JOYSTICK_BASE_ADDRESS + 0x02, JOYSTICK_TYPE_JOYSTICK, 128, 0),	// LEFT MFD
-		Joystick_(JOYSTICK_BASE_ADDRESS + 0x03, JOYSTICK_TYPE_JOYSTICK, 128, 0),	// BOTTOM MFD
+		Joystick_(JOYSTICK_BASE_ADDRESS + 0x00, JOYSTICK_TYPE_JOYSTICK, 128, 0, false, false, false, false, false, false, false, false, false, false, false),	// BASE JOYSTICK (doesn't change with mode)
+		Joystick_(JOYSTICK_BASE_ADDRESS + 0x01, JOYSTICK_TYPE_JOYSTICK, 128, 0, false, false, false, false, false, false, false, false, false, false, false),	// RIGHT MFD
+		Joystick_(JOYSTICK_BASE_ADDRESS + 0x02, JOYSTICK_TYPE_JOYSTICK, 128, 0, false, false, false, false, false, false, false, false, false, false, false),	// LEFT MFD
+		Joystick_(JOYSTICK_BASE_ADDRESS + 0x03, JOYSTICK_TYPE_JOYSTICK, 128, 0, false, false, false, false, false, false, false, false, false, false, false),	// BOTTOM MFD
 };
 uint8_t activeJoystick = Mode::Right;
 void handleChangeMode(uint8_t mode) {
