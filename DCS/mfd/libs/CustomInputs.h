@@ -1,3 +1,10 @@
+/*
+  CustomInputs.h - Library for wrapping inputs with error correction and debouncing.
+  Created by Kevin M Yedlin, 2022-09-05
+  Based on this: https://www.best-microcontroller-projects.com/rotary-encoder.html
+ */
+
+#include "Arduino.h"
 #include <InputDebounce.h>
 
 namespace CustomInputs {
@@ -10,10 +17,8 @@ enum StepsPerDetent {
 
 class RotaryEncoder {
  private:
-	// Joystick_* joy;
 	uint8_t buttonInc_;
 	uint8_t buttonDec_;
-	// uint8_t val;
 	uint8_t pinClk_;
 	uint8_t pinData_;
 	uint8_t lastState_;

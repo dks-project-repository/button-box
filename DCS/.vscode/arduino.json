@@ -1,0 +1,5 @@
+{
+    "board": "arduino:sam:arduino_due_x_dbg",
+    "sketch": "i2c_mfd\\RightMFD\\RightMFD.ino",
+    "port": "COM3"
+}

@@ -1,0 +1,5 @@
+{
+    "board": "arduino:sam:arduino_due_x_dbg",
+    "sketch": "LeftMFD\\LeftMFD.ino",
+    "port": "COM5"
+}

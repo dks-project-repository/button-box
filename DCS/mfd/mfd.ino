@@ -1,7 +1,7 @@
 #include <InputDebounce.h>
 #include <Joystick.h>
 
-#include "libs/CustomInputs.h"
+#include "libs/CustomInputs.h";
 
 #define JOYSTICK_BASE_ADDRESS 0x0A
 
