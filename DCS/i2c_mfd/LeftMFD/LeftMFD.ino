@@ -150,12 +150,11 @@ CustomInputs::Button buttons[NUM_BUTTONS] = {
 
 #define NUM_ROTARIES 4
 CustomInputs::RotaryEncoder rotaries[NUM_ROTARIES] = {
-	/**********UFC ROTARIES**********/
-	CustomInputs::RotaryEncoder(0, 1, handleBaseMomentaryPress, 16, 17), // TOP LEFT
-	CustomInputs::RotaryEncoder(3, 4, handleBaseMomentaryPress, 18, 19), // TOP RIGHT
 	/**********MFD ROTARIES**********/
 	CustomInputs::RotaryEncoder(8, 9, handleMfdMomentaryPress, 20, 21),	  // BOTTOM RIGHT (MFD)
 	CustomInputs::RotaryEncoder(11, 12, handleMfdMomentaryPress, 22, 23), // BOTTOM LEFT (MFD)
+	CustomInputs::RotaryEncoder(0, 1, handleMfdMomentaryPress, 24, 25),	  // TOP LEFT (MFD)
+	CustomInputs::RotaryEncoder(3, 4, handleMfdMomentaryPress, 26, 27),	  // TOP RIGHT (MFD)
 };
 
 void setup()
